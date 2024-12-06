@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "ed4744f3f382d6021892cc50aaefeea2"
-application_url = "https://char-sectors-complimentary-continuing.trycloudflare.com"
+application_url = "https://sight-commons-planet-acknowledged.trycloudflare.com"
 embedded = true
 name = "first-vercel-app"
 handle = "first-vercel-app"
@@ -19,9 +19,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://char-sectors-complimentary-continuing.trycloudflare.com/auth/callback",
-  "https://char-sectors-complimentary-continuing.trycloudflare.com/auth/shopify/callback",
-  "https://char-sectors-complimentary-continuing.trycloudflare.com/api/auth/callback"
+  "https://sight-commons-planet-acknowledged.trycloudflare.com/auth/callback",
+  "https://sight-commons-planet-acknowledged.trycloudflare.com/auth/shopify/callback",
+  "https://sight-commons-planet-acknowledged.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

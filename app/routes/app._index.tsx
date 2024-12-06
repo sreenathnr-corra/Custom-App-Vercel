@@ -77,7 +77,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     {
       variables: {
         productId: product.id,
-        variants: [{ id: variantId, price: "100.00" }],
+        variants: [{ id: variantId, price: "150.00" }],
       },
     },
   );

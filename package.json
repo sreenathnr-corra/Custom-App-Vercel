@@ -2,25 +2,25 @@
   "name": "first-vercel-app",
   "private": true,
   "scripts": {
-    "build": "remix vite:build",                      // Build for production
-    "dev": "shopify app dev",                          // Run in development mode
-    "config:link": "shopify app config link",          // Link config for the app
-    "generate": "shopify app generate",                // Generate app files
-    "deploy": "shopify app deploy",                    // Deploy app to production
-    "config:use": "shopify app config use",            // Use configuration settings
-    "env": "shopify app env",                          // Manage environment variables
-    "start": "remix-serve ./build/server/index.js",    // Start server in production mode
-    "docker-start": "npm run setup && npm run start",  // Start in Docker with setup
-    "setup": "prisma generate && prisma migrate deploy", // Prisma setup for database
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .", // Linting
-    "shopify": "shopify",                              // Shopify CLI commands
-    "prisma": "prisma",                                // Prisma CLI commands
-    "graphql-codegen": "graphql-codegen",              // Generate GraphQL code
-    "vite": "vite"                                    // Run Vite (for frontend bundling)
+    "build": "remix vite:build",
+    "dev": "shopify app dev",
+    "config:link": "shopify app config link",
+    "generate": "shopify app generate", 
+    "deploy": "shopify app deploy",
+    "config:use": "shopify app config use",
+    "env": "shopify app env",
+    "start": "remix-serve ./build/server/index.js",
+    "docker-start": "npm run setup && npm run start",
+    "setup": "prisma generate && prisma migrate deploy",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+    "shopify": "shopify",
+    "prisma": "prisma",
+    "graphql-codegen": "graphql-codegen",
+    "vite": "vite" 
   },
   "type": "module",
   "engines": {
-    "node": "^18.20 || ^20.10 || >=21.0.0"            // Specify compatible Node.js versions
+    "node": "^18.20 || ^20.10 || >=21.0.0"
   },
   "dependencies": {
     "@prisma/client": "^5.11.0",

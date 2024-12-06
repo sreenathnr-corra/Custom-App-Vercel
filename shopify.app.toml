@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ed4744f3f382d6021892cc50aaefeea2"
+application_url = "https://char-sectors-complimentary-continuing.trycloudflare.com"
+embedded = true
+name = "first-vercel-app"
+handle = "first-vercel-app"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://char-sectors-complimentary-continuing.trycloudflare.com/auth/callback",
+  "https://char-sectors-complimentary-continuing.trycloudflare.com/auth/shopify/callback",
+  "https://char-sectors-complimentary-continuing.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "vercel-deployment-store.myshopify.com"
+automatically_update_urls_on_dev = true
